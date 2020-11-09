@@ -7,7 +7,6 @@ Link: https://synthesis.frccsc.ru/synthesis/student/BigData/seminar-hadoop/lectu
 <strong>Chosen algorithm is <em>TF*IDF</em></strong>
 
 ### Run:
-* type
 ```
 $ python3 Do.py docs
 ```
