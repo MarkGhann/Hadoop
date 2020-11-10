@@ -1,4 +1,4 @@
-# Big Data Course
+# Big Data
 
 ## Task 1 -- Hadoop Map Reduce
 

@@ -3,9 +3,7 @@ from mrjob.step import MRStep
 from math import log
 from os import environ
 
-main_line = "the for"
-
-word_list = main_line.split(" ")
+word_list = ["the", "for"]
 
 total_files = 3
 
