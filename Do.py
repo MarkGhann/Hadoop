@@ -36,13 +36,13 @@ class MRMostUsedWord(MRJob):
             yield (doc, _), (__, gen_summ)
 
     def mapper_restructured_word_and_sums(self, doc_word, summ_fields):
-        yield doc_word[1], (doc_word[0], summ_fields[0], summ_fields[1], 1)
+        yield doc_word[1], (doc_word[0], summ_fields[0], summ_fields[1])
 
     def reducer_get_measurement_structure(self, word, doc_and_summ_fields):
         forced_same = []
-        for _, __, ___, ____ in doc_and_summ_fields:
-            forced_same += [(_, __, ___, ____)]
-        for _, __, ___, ____ in forced_same:
+        for _, __, ___ in doc_and_summ_fields:
+            forced_same += [(_, __, ___)]
+        for _, __, ___ in forced_same:
             yield (_, word), (__, ___, total_files, len(forced_same))
 
 
